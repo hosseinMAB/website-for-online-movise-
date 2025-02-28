@@ -1,0 +1,41 @@
+body {
+  background-image: url("../src/assets/backGraundContent/back_image_01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+}
+button {
+  cursor: pointer;
+}
+.Toastify {
+  background-color: #2196f3;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 300px; /* يمكنك تغيير العرض */
+  transition: all 0.5s ease; /* إضافة انتقالات سلسة */
+}
+
+.Toastify--success {
+  background-color: #4caf50; /* لون الخلفية للنجاح */
+  color: white; /* لون النص */
+}
+
+.Toastify--error {
+  background-color: #f44336; /* لون الخلفية للخطأ */
+  color: white; /* لون النص */
+}
+
+.Toastify--info {
+  background-color: #2196f3; /* لون الخلفية للمعلومات */
+  color: white; /* لون النص */
+}
+
+.Toastify--warning {
+  background-color: #ff9800; /* لون الخلفية للتحذيرات */
+  color: white; /* لون النص */
+}

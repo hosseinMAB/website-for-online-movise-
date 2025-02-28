@@ -1,0 +1,272 @@
+i {
+  font-size: 12px;
+  color: white;
+}
+
+/* header */
+header .div_Header {
+  height: 50px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(96, 95, 95, 0.545);
+  z-index: 1000;
+}
+/* top header */
+header .div_Header .Top_Headar {
+  height: 50px;
+  margin-inline: auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+header .div_Header .Top_Headar .Container .logo {
+  width: 140px;
+  height: 100px;
+  object-fit: contain;
+}
+header .div_Header .Top_Headar .Container .logo img {
+  width: 100%;
+  height: 100%;
+}
+header .div_Header .Top_Headar .Container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+}
+
+header .div_Header .Top_Headar .Container .Ul_Links ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  align-items: center;
+  justify-items: center;
+  height: 40px;
+}
+header .div_Header .Top_Headar .Container .Ul_Links ul li {
+  color: white;
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  padding: 3px;
+  height: 20px;
+  cursor: pointer;
+}
+header .div_Header .Top_Headar .Container .Ul_Links ul li:hover {
+  color: black;
+  border-bottom: 2px solid white;
+  transition: all 0.3s;
+  background-color: rgba(202, 196, 196, 0.236);
+  backdrop-filter: blur(5px);
+  scale: 1.1;
+  padding-bottom: 7px;
+}
+header .div_Header .Top_Headar .Container .Ul_Links ul li:hover a,
+header .div_Header .Top_Headar .Container .Ul_Links ul li:hover i {
+  color: black;
+  transition: all 0.3s;
+}
+header .div_Header .Top_Headar .Container .Ul_Links ul li.active {
+  color: black;
+  border-bottom: 2px solid white;
+  transition: all 0.3s;
+  background-color: rgba(202, 196, 196, 0.236);
+  backdrop-filter: blur(5px);
+  scale: 1.1;
+  padding-bottom: 7px;
+}
+
+header .div_Header .Top_Headar .Container .Ul_Links ul li.active i {
+  color: black;
+}
+header .div_Header .Top_Headar .Container .Button_Top_Header {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  justify-items: center;
+}
+header .div_Header .Top_Headar .Container .Button_Top_Header button {
+  background: none;
+  border: none;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  padding: 5px;
+}
+header .div_Header .Top_Headar .Container .Button_Top_Header button:hover i {
+  color: black;
+  transition: 0.3s;
+  scale: 1.5;
+}
+/* bottom header */
+header .div_Header .Bottom_Headar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+header .div_Header .Bottom_Headar .Container {
+  width: 100%;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  gap: 20px;
+  animation: show_container 3s ease-in-out;
+  height: max-content;
+  background-color: rgba(53, 45, 45, 0.64);
+  backdrop-filter: blur(10);
+  box-shadow: 3px 3px 7px 2px inset rgb(155, 154, 154);
+}
+@keyframes show_container {
+  10% {
+    height: 0px;
+    overflow: hidden;
+  }
+  50% {
+  }
+  100% {
+    height: max-content;
+  }
+}
+header .div_Header .Bottom_Headar .Container .Serching,
+header .div_Header .Bottom_Headar .Container .div_Gateugers {
+  width: 200px;
+  height: 25px;
+  background-color: rgba(75, 96, 120, 0);
+  backdrop-filter: blur(40px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+  border-bottom: 1px solid white;
+  border-bottom-right-radius: 3px;
+  box-shadow: inset 5px -1px 20px 0.1px rgba(184, 183, 183, 0.661);
+}
+header .div_Header .Bottom_Headar .Container .Serching div,
+header .div_Header .Bottom_Headar .Container .div_Gateugers div {
+  background: black;
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  cursor: pointer;
+}
+header .div_Header .Bottom_Headar .Container .div_Gateugers div {
+  border-right: 1px solid white;
+
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+header .div_Header .Bottom_Headar .Container .Serching div:hover i,
+header .div_Header .Bottom_Headar .Container .div_Gateugers:hover div i {
+  scale: 1.1;
+}
+header .div_Header .Bottom_Headar .Container .Serching input {
+  width: 80%;
+  height: 30px;
+  background: none;
+  outline: none;
+  border: none;
+  padding-inline-start: 10px;
+}
+header .div_Header .Bottom_Headar .Container .div_Gateugers div {
+  background-color: black;
+}
+
+.active_li {
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+header .div_Header .Bottom_Headar .Container .div_Gateugers p {
+  width: 80%;
+  height: 100%;
+  font-size: 13px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  font-family: sans-serif;
+}
+header .div_Header .Bottom_Headar .Container .div_Gateugers {
+  width: 100px;
+  position: relative;
+  overflow: visible;
+  cursor: pointer;
+}
+header .div_Header .Bottom_Headar .Container .div_Gateugers .list_down {
+  position: absolute;
+  top: 12px;
+  right: 0px;
+  height: max-content;
+  width: max-content;
+  background: none;
+  border: none;
+  padding: 0px;
+}
+
+header .div_Header .Bottom_Headar .Container .div_Gateugers .list_down ul {
+  width: 100px;
+  background-color: rgba(170, 174, 178, 0.743);
+  animation: show_down 0.5s ease-in-out;
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  list-style: none;
+  position: relative;
+  display: flex;
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 0px;
+}
+
+@keyframes show_down {
+  from {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+header .div_Header .Bottom_Headar .Container .div_Gateugers .list_down ul li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(137, 142, 147);
+  height: 30px;
+  font-size: 14px;
+  color: black;
+}
+header
+  .div_Header
+  .Bottom_Headar
+  .Container
+  .div_Gateugers
+  .list_down
+  ul
+  li:hover {
+  background-color: rgba(181, 187, 191, 0.774);
+
+  color: white;
+}

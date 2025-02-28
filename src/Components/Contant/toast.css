@@ -1,0 +1,49 @@
+.Toastify {
+  background-color: #2196f3;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 300px; /* يمكنك تغيير العرض */
+  transition: all 0.5s ease; /* إضافة انتقالات سلسة */
+}
+
+.Toastify--success {
+  background-color: #4caf50; /* لون الخلفية للنجاح */
+  color: white; /* لون النص */
+}
+
+.Toastify--error {
+  background-color: #f44336; /* لون الخلفية للخطأ */
+  color: white; /* لون النص */
+}
+
+.Toastify--info {
+  background-color: #2196f3; /* لون الخلفية للمعلومات */
+  color: white; /* لون النص */
+}
+
+.Toastify--warning {
+  background-color: #ff9800; /* لون الخلفية للتحذيرات */
+  color: white; /* لون النص */
+}
+.Toastify__toast {
+  background-color: #f8d7da;
+  color: #721c24;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.Toastify__close-button {
+  color: #1b191a;
+}
+
+.Toastify__progress-bar--bg {
+  background-color: #7d7979db;
+}
+
+.Toastify__progress-bar {
+  background-color: #211d1d;
+}

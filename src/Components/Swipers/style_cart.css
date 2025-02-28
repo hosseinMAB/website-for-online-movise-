@@ -1,0 +1,22 @@
+.container_swip .swiper {
+  width: 200px;
+  height: 320px;
+  background: none;
+  position: relative;
+  transition: 2s ease-in-out;
+  backdrop-filter: blur(0px);
+}
+.container_swip .swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: none;
+}
+.container_swip .swiper .swiper-slide img {
+  width: 120px;
+}
+.container_swip .swiper .swiper-slide:hover img {
+  width: 220px;
+}
